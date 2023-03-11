@@ -9,6 +9,7 @@ package cuentas;
  * Podemos seguir el proyecto en el repositorio online de Github
  * @see https://github.com/Blancofdez/Deposito.git
  * 
+ * 
  */
 
 public class CCuenta {
@@ -41,40 +42,75 @@ public class CCuenta {
         saldo=sal;
     }
 
-   /** Metodos getter y setter
+   /** El método getNombre
     * 
-    * A continuación tenemos una lista de los metodos getter y setter 
-    * correspondientesa los atributos de la clase
-    * 
+    * @return Devuelve el nombre del cliente de la cuenta
     */
     
     public String getNombre() {
         return nombre;
     }
+    
+     /** El método getCuenta
+    * 
+    * @return Devuelve el núemro de cuenta del cliente
+    */
 
     public String getCuenta() {
         return cuenta;
     }
+    
+     /** El método getSaldo
+    * 
+    * @return Devuelve el saldo actual del cliente
+    */
 
     public double getSaldo() {
         return saldo;
     }
+    
+     /** El método getTipoInterés
+    * 
+    * @return Devuelve el tipo de interés que tiene la cuenta
+    */
 
     public double getTipoInterés() {
         return tipoInterés;
     }
+    
+     /** El método setNombre
+      * 
+      * @param nombre 
+      */
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+    
+     /** El método setCuenta
+      * 
+      * @param cuenta 
+      */
+ 
 
     public void setCuenta(String cuenta) {
         this.cuenta = cuenta;
     }
-
+    
+     /** El método setSaldo
+      * 
+      * @param saldo 
+      */
+  
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
+    
+     /** El método setTipoInterés
+      * 
+      * @param tipoInterés 
+      */
+
 
     public void setTipoInterés(double tipoInterés) {
         this.tipoInterés = tipoInterés;
@@ -111,6 +147,14 @@ public class CCuenta {
         saldo = saldo + cantidad;
     }
 
+       /** El metodo retirar
+        * 
+        * Realiza una retirada en cuenta
+        * 
+        * @param cantidad
+        * @throws Exception 
+        */
+    
     public void retirar(double cantidad) throws Exception
     {
         if (cantidad <= 0)

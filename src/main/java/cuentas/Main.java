@@ -8,6 +8,16 @@ public class Main {
         
         operativa_cuenta(0);
     }
+    
+    /** El método operativa_cuenta
+     * 
+     * Recive un parámetro cantidad
+     * @param cantidad 
+     * 
+     * Este opera con el parámetro cantidad, tanto para ingresar como para retirar
+     * si fuera posible.
+     */
+    
 
     public static void operativa_cuenta(float cantidad) {
         
